@@ -1,5 +1,6 @@
 @import "_normalize";
 @import "_variables";
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab&display=swap');
 
 
 html {
@@ -13,4 +14,9 @@ html {
 body {
   color: $yellow;
   background: $violet;
+  font-family: 'Lato', sans-serif;
+}
+
+.test{
+  font-family: 'Roboto Slab', serif;
 }
