@@ -2,7 +2,7 @@
 
 # MY HOMEPAGE
 
-Link to my site: [click](https://mc777.github.io/homepage-gulp/https://mc777.github.io/homepage-gulp/)
+Link to my site: [click](https://mc777.github.io/homepage-gulp)
 
 ## HOW TO RUN MY SITE LOCALLY
 
