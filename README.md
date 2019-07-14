@@ -1,4 +1,12 @@
-# wtf-gulp-starter
+![Homepage screenshot](github/gh.PNG)
+
+# MY HOMEPAGE
+
+Link to my site: [click](https://mc777.github.io/homepage-gulp/https://mc777.github.io/homepage-gulp/)
+
+## HOW TO RUN MY SITE LOCALLY
+
+To run that site run following steps:
 
 `npm install -g gulp-cli`
 
