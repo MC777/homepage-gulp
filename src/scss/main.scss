@@ -12,7 +12,7 @@ html {
 }
 
 body {
-	background-color: rgba(45, 250, 4, 0.137);
+	background-color:#f3f3f3;
   color: #333;
   font-family: 'Lato', sans-serif;
 }
@@ -152,14 +152,6 @@ p {
   }
 }
 
-.diary:first-child{
-	background: yellow;
-}
-
-.diary:last-child{
-	background: yellow;
-}
-
 .day__header {
 	margin: 0 0 16px;
 	color: #0496FF;
@@ -189,9 +181,6 @@ p {
 
 .day {
   padding: 16px;
-  &:not(day--special){
-    background: violet;
-  }
   &__paragraph {
     line-height: 24px;
     padding: 0;
