@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/MC777/homepage-gulp/issues"
   },
-  "homepage": "https://github.com/MC777/homepage-gulp#readme",
+  "homepage": "https://github.com/MC777/homepage-gulp#readme  ",
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.4",
@@ -47,6 +47,7 @@
     ]
   },
   "dependencies": {
+    "gulp-clean-css": "^4.2.0",
     "moment": "^2.24.0"
   }
 }
