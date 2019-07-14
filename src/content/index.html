@@ -1,17 +1,268 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-  <h1>Hello world!</h1>
+<html lang="pl">
 
-  <p class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, eius nisi! Deserunt impedit, reprehenderit repudiandae aliquam repellendus expedita saepe provident vero at quidem, ducimus nisi consequuntur distinctio id, iure dolores.</p>
-  
-  <script src="js/main.js"></script>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+
+<body>
+	<header class="site-header">
+		<nav class="navigation">
+			<ul class="navigation__list navigation__list--js navigation__list--visible">
+				<li class="navigation__item"><a class="navigation__link" href="index.html">Strona główna</a></li>
+				<li class="navigation__item"><a class="navigation__link" href="podstrona.html">Podstrona</a></li>
+				<li class="navigation__item"><a class="navigation__link" href="podstrona1.html">Podstrona1</a></li>
+				<li class="navigation__item"><a class="navigation__link" href="podstrona2.html">Podstrona2</a></li>
+				<li class="navigation__item"><a class="navigation__link" href="podstrona3.html">Podstrona3</a></li>
+			</ul>
+		</nav>
+		<button class="navigation__switcher navigation__switcher--js" aria-label="Open the menu">=</button>
+	</header>
+	<main id="top" class="main">
+		<header class="header">
+			<h1 class="header__title header__title--js">Maciek Korsan - stronoa domowa - Pozdro</h1>
+			<button class="heaser__button header__button--js">Zmień treść nagłówka</button>
+			<input class="focus">
+		</header>
+		<div class="welcome__paragraph--js"></div>
+		<div class="grid"></div>
+			<section class="about">
+				<div class="box">CO TEN FRONTEND</div>
+				<h2 class="about__header">Kim Jestem?</h2>
+				<img src="/assets/img/korsan-header.jpg" alt="Uśmiechnięty Korsan" class="about__picture" />
+				<p class="about__paragraph">Hej! Na co dzień uczę wspaniałych ludzi tajnej sztuki frontendu. Lorem ipsum, dolor
+					sit amet
+					consectetur adipisicing elit. Eveniet velit explicabo facere atque nihil quaerat quibusdam neque natus
+					repudiandae consequatur maxime veritatis ut ab reprehenderit repellendus culpa quod, excepturi asperiores!
+					Lorem
+					ipsum, dolor sit amet consectetur adipisicing elit. Eveniet velit explicabo facere atque nihil quaerat
+					quibusdam
+					neque natus repudiandae consequatur maxime veritatis ut ab reprehenderit repellendus culpa quod, excepturi
+					asperiores! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet velit explicabo facere atque
+					nihil
+					quaerat quibusdam neque natus repudiandae consequatur maxime veritatis ut ab reprehenderit repellendus culpa
+					quod, excepturi asperiores! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet velit explicabo
+					facere atque nihil quaerat quibusdam neque natus repudiandae consequatur maxime veritatis ut ab reprehenderit
+					repellendus culpa quod, excepturi asperiores! Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+					Eveniet
+					velit explicabo facere atque nihil quaerat quibusdam neque natus repudiandae consequatur maxime veritatis ut
+					ab
+					reprehenderit repellendus culpa quod, excepturi asperiores! Lorem ipsum, dolor sit amet consectetur
+					adipisicing
+					elit. Eveniet velit explicabo facere atque nihil quaerat quibusdam neque natus repudiandae consequatur maxime
+					veritatis ut ab reprehenderit repellendus culpa quod, excepturi asperiores!</p>
+				<a class="about__link" href="#pamietniczek">Przejdź do Pamiętniczka</a>
+				<p class="about__paragraph about__paragraph--mini about__paragraph--js">
+					Testuję modyfikator.
+				</p>
+				<section class="hobby">
+					<ul class="hobby__list">
+						<li>nagrywanie szkolenia</li>
+						<li>dronowanie</li>
+						<li>spanie</li>
+						<li>układanie planu dnia</li>
+						<ol>
+							<li>otwórz przeglądarkę</li>
+							<li>wpisz cotenfrontend.pl</li>
+							<li>[ENTER]</li>
+						</ol>
+					</ul>
+				</section>
+
+				<section class="plan">
+					<ol>
+						<li>otwórz przeglądarkę</li>
+						<li>wpisz cotenfrontend.pl</li>
+						<li>[ENTER]</li>
+					</ol>
+				</section>
+
+			</section>
+			<div class="content">
+				<section class="diary" id="pamietniczek">
+					<h2 class="diary__header">Pamiętniczek</h2>
+					<div class="grid">
+						<section class="day">
+							<h3 class="day__header">Jak stworzyć prawidłowego HTML-a?</h3>
+							<p class="day__paragraph">Tworzenie zgodnego ze standardami HTML-a to sztuka, którą do perfekcji opanowało
+								niewielu.
+							</p>
+							<a class="day__link" href="podstrona.html">Przejdź do artykułu o pisaniu HTML-a</a>
+						</section>
+						<section class="day">
+							<h3 class="day__header">Czy nagrywanie szkolenia to prosta sprawa?</h3>
+							<p class="day__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet temporibus nihil
+								nisi
+								id
+								in
+								repellat ipsa, cumque ex quas pariatur ea? Quis tempore odio consequatur magni praesentium similique
+								quam
+								labore.Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet temporibus nihil nisi id in
+								repellat
+								ipsa, cumque ex quas pariatur ea? Quis tempore odio consequatur magni praesentium similique quam
+								labore.Lorem
+								ipsum dolor sit amet consectetur adipisicing elit. Amet temporibus nihil nisi id in repellat ipsa,
+								cumque
+								ex
+								quas pariatur ea? Quis tempore odio consequatur magni praesentium similique quam labore.Lorem ipsum
+								dolor
+								sit
+								amet consectetur adipisicing elit. Amet temporibus nihil nisi id in repellat ipsa, cumque ex quas
+								pariatur
+								ea?
+								Quis tempore odio consequatur magni praesentium similique quam labore.Lorem ipsum dolor sit amet
+								consectetur
+								adipisicing elit. Amet temporibus nihil nisi id in repellat ipsa, cumque ex quas pariatur ea? Quis
+								tempore
+								odio consequatur magni praesentium similique quam labore.Lorem ipsum dolor sit amet consectetur
+								adipisicing
+								elit. Amet temporibus nihil nisi id in repellat ipsa, cumque ex quas pariatur ea? Quis tempore odio
+								consequatur magni praesentium similique quam labore.Lorem ipsum dolor sit amet consectetur adipisicing
+								elit.
+								Amet temporibus nihil nisi id in repellat ipsa, cumque ex quas pariatur ea? Quis tempore odio
+								consequatur
+								magni praesentium similique quam labore.Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+								temporibus nihil nisi id in repellat ipsa, cumque ex quas pariatur ea? Quis tempore odio consequatur
+								magni
+								praesentium similique quam labore.Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+								temporibus
+								nihil nisi id in repellat ipsa, cumque ex quas pariatur ea? Quis tempore odio consequatur magni
+								praesentium
+								similique quam labore.Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet temporibus nihil
+								nisi
+								id
+								in repellat ipsa, cumque ex quas pariatur ea? Quis tempore odio consequatur magni praesentium similique
+								quam
+								labore.Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet temporibus nihil nisi id in
+								repellat
+								ipsa, cumque ex quas pariatur ea? Quis tempore odio consequatur magni praesentium similique quam
+								labore.Lorem
+								ipsum dolor sit amet consectetur adipisicing elit. Amet temporibus nihil nisi id in repellat ipsa,
+								cumque
+								ex
+								quas pariatur ea? Quis tempore odio consequatur magni praesentium similique quam labore.Lorem ipsum
+								dolor
+								sit
+								amet consectetur adipisicing elit. Amet temporibus nihil nisi id in repellat ipsa, cumque ex quas
+								pariatur
+								ea?
+								Quis tempore odio consequatur magni praesentium similique quam labore.Lorem ipsum dolor sit amet
+								consectetur
+								adipisicing elit. Amet temporibus nihil nisi id in repellat ipsa, cumque ex quas pariatur ea? Quis
+								tempore
+								odio consequatur magni praesentium similique quam labore.Lorem ipsum dolor sit amet consectetur
+								adipisicing
+								elit. Amet temporibus nihil nisi id in repellat ipsa, cumque ex quas pariatur ea? Quis tempore odio
+								consequatur magni praesentium similique quam labore.Lorem ipsum dolor sit amet consectetur adipisicing
+								elit.
+								Amet temporibus nihil nisi id in repellat ipsa, cumque ex quas pariatur ea? Quis tempore odio
+								consequatur
+								magni praesentium similique quam labore.Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+								temporibus nihil nisi id in repellat ipsa, cumque ex quas pariatur ea? Quis tempore odio consequatur
+								magni
+								praesentium similique quam labore.Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+								temporibus
+								nihil nisi id in repellat ipsa, cumque ex quas pariatur ea? Quis tempore odio consequatur magni
+								praesentium
+								similique quam labore.Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet temporibus nihil
+								nisi
+								id
+								in repellat ipsa, cumque ex quas pariatur ea? Quis tempore odio consequatur magni praesentium similique
+								quam
+								labore.
+							</p>
+						</section>
+						<section class="day">
+							<h3 class="day__header">Czy nagrywanie szkolenia to prosta sprawa?</h3>
+							<p class="day__paragraph">Na <strong>początku</strong> myślałem, że nagranie szkolenia zajmie <em>tylko
+									dwa</em>
+								tygodnie. Samo
+								planowanie to trudna sprawa.
+							</p>
+						</section>
+						<section class="day day--special">
+							<h3 class="day__header day__header--sunday">Czy nagrywanie szkolenia to prosta sprawa?</h3>
+							<p class="day__paragraph">Na początku myślałem, że nagranie szkolenia zajmie dwa tygodnie. Samo planowanie
+								to
+								trudna
+								sprawa.
+							</p>
+						</section>
+						<section class="day">
+							<h3 class="day__header">Czy nagrywanie szkolenia to prosta sprawa?</h3>
+							<p class="day__paragraph">Na początku myślałem, że nagranie szkolenia zajmie dwa tygodnie. Samo planowanie
+								to
+								trudna
+								sprawa.
+							</p>
+						</section>
+						<section class="day">
+							<h3 class="day__header">Czy nagrywanie szkolenia to prosta sprawa?</h3>
+							<p class="day__paragraph">Na początku myślałem, że nagranie szkolenia zajmie dwa tygodnie. Samo planowanie
+								to
+								trudna
+								sprawa.
+							</p>
+						</section>
+						<section class="day">
+							<h3 class="day__header">Czy nagrywanie szkolenia to prosta sprawa?</h3>
+							<p class="day__paragraph">Na początku myślałem, że nagranie szkolenia zajmie dwa tygodnie. Samo planowanie
+								to
+								trudna
+								sprawa.
+							</p>
+						</section>
+					</div>
+					<section class="glossary">
+						<dl>
+							<dt>CSS</dt>
+							<dd>Style (to co widzisz jak jest ładne albo brzydkie).</dd>
+							<dt>HTML</dt>
+							<dd>Treść plus szkielet strony.</dd>
+							<dt>JavaScript</dt>
+							<dt>ES6</dt>
+							<dd>rzeczy, których teraz się uczę</dd>
+						</dl>
+					</section>
+
+					<section class="data">
+						<table>
+							<caption>Wartośś osób w zł</caption>
+							<thead>
+								<tr>
+									<th>Imie Nazwisko</th>
+									<th>Cena</th>
+									<th>Data</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Marek Marecki</td>
+									<td>100zł</td>
+									<td>01.01.2019</td>
+								</tr>
+								<tr>
+									<td>Marek Dwa</td>
+									<td>40zł</td>
+									<td>01.01.2019</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+
+			</div>
+		</div>
+
+		</section>
+	</main>
+	<footer>
+		<a href="#top" class="top">Na górę</a>
+		Strona domowa Maćka Korsana, wszystkie efekty są efektem tworzenia szkolenia WTF: Co Ten Frotend
+	</footer>
+	<script src="js/main.js"></script>
 </body>
+
 </html>

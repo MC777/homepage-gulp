@@ -4,19 +4,280 @@
 
 
 html {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 *, *:before, *:after {
-  box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+	background-color: rgba(45, 250, 4, 0.137);
+  color: #333;
   font-family: 'Lato', sans-serif;
 }
 
-.test{
+.diary__header {
+	color: #00487c;
+  clear: left;
   font-family: 'Roboto Slab', serif;
+}
+
+.main {
+	width: 100%;
+	max-width: 700px;
+	margin: 32px auto;
+	padding-top: 50px;
+	display: grid;
+	grid-template-areas: "header header"
+	"about content";
+	grid-template-columns: 200px 1fr;
+}
+
+@media (max-width: 640px){
+	.main{
+		grid-template-areas: "header"
+		"content"
+		"about";
+		grid-template-columns: 1fr;
+	}
+}
+p {
+	color: darkblue;
+}
+
+.paragraph {
+	color: rgb(202, 5, 169);
+	border: 1px dashed green;
+	border-radius: 20px;
+}
+
+.main__Footer {
+	color: rebeccapurple;
+}
+
+.box {
+	width: 200px;
+	height: 200px;
+	padding: 10px;
+	border: 2px solid red;
+	background: yellowgreen;
+	box-sizing: border-box;
+	position: sticky;
+	top: 0px;
+}
+
+.top {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+}
+
+.site-header {
+	background: #fefefe;
+	box-sizing: border-box;
+	left: 0;
+	padding: 15px;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 10;
+	min-height: 48px;
+}
+
+.header{
+	color: #1A936F;
+	grid-area: header;
+}
+
+.navigation {
+  &__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  &__item {
+    display: block;
+    margin: 0 16px;
+  }
+  &__link {
+    color: #1A936F;
+    &:visited{
+      color: #ccc;
+    }
+    &:hover{
+      color: royalblue;
+    }
+  }
+}
+
+.focus:focus{
+	border: 3px solid red;
+}
+
+.diary {
+	clear: left;
+}
+
+.content{
+	grid-area: content;
+	padding: 16px;
+}
+
+.about {
+	grid-area: about;
+  padding: 16px;
+  &__header {
+    color: #1460aa;
+  }
+  &__paragraph {
+    margin: 0;
+    padding: 0 0 16px 0;
+    font-size: 16px;
+    &--mini {
+      font-size: 12px;
+      color: #FF6700;
+    }
+  }
+  &__picture {
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    float: left;
+    margin: 0 16px 16px 0;
+  }
+  &__link {
+    color: #1A936F;
+  }
+}
+
+.diary:first-child{
+	background: yellow;
+}
+
+.diary:last-child{
+	background: yellow;
+}
+
+.day__header {
+	margin: 0 0 16px;
+	color: #0496FF;
+  font-size: 20px;
+  &::before{
+    content: "";
+    display: inline-block;
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: yellow;
+  }
+  &::after{
+    content: "";
+    display: inline-block;
+    margin-left: 5px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: red;
+  }
+  &--sunday {
+    color: darkred;
+  }
+}
+
+.day {
+  padding: 16px;
+  &:not(day--special){
+    background: violet;
+  }
+  &__paragraph {
+    line-height: 24px;
+    padding: 0;
+    margin: 0;
+  }
+  &__link {
+    color: #1A936F;
+  }
+}
+
+.header {
+  color: #00487c;
+  &title {
+    color: #00487c;
+    margin-bottom: 48px;
+    &--red {
+      color: darkred;
+    }
+  }
+}
+
+.hobby {}
+
+.hobby__list {
+	list-style: none;
+	padding: 0;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td {
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 16px;
+	grid-row-gap: 16px;
+}
+
+@media not screen and (min-width: 640px) and (max-width: 1000px) {
+	.grid {
+		grid-template-columns: 1fr;
+	}
+	.day__link {
+		color: hotpink;
+	}
+}
+
+@media (min-width: 641px) {
+	.main {
+		max-width: 900px;
+	}
+	.navigation__switcher {
+		display: none;
+	}
+}
+
+@media(max-width: 640px) {
+	.navigation__list {
+		flex-direction: column;
+		display: none;
+	}
+	.navigation__list--visible {
+		display: flex;
+	}
+	.navigation__item {
+		margin: 16px;
+	}
+	.site-header {
+		min-height: 48px;
+	}
+	.navigation__switcher {
+		border: none;
+		background: none;
+		position: absolute;
+		right: 16px;
+		top: 16px;
+	}
 }
